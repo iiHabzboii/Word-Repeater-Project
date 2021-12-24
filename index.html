@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Word repeater</title>
+        <!-- CSS Styling -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <form method="get">
+                <div class="parent">
+                    <div class="input">
+                        <div class="text-area">
+                            <h3>Type your text:</h3>
+                            <textarea id="text" cols="30" rows="10"></textarea>
+                        </div>
+                        <span id="submit">Submit!</span>
+                    </div>
+                    <div class="count-area">
+                        <h3>How much?</h3>
+                        <input type="number" id="count" min="1" max="100">
+                    </div>
+                    <div class="result">
+                        <!-- Result -->
+                        <h3>Result: </h3>
+                        <div id="result-box"></div>
+                        <span id="copy-button">Copy</span>
+                    </div>
+                </div>
+            </form>
+            <div class="copyright-text">
+                &copy; all rights reversed to <strong>@iihabzboii</strong>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
