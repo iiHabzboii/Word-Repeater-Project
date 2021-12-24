@@ -13,12 +13,15 @@ submitButton.onclick = (e) => {
     if (text.value == "") {
         alert("Cannot have empty fields.");
     } else {
-        // Making the text empty (glich solve)
-        resultBox.innerHTML = "";
-        // Looping the text to make the repeat
-        for (let i = 0; i < parseInt(count.value); i++) {
-            resultBox.innerHTML += `${text.value} `;
-            setInterval(50);
+            if (count.value > 100 || count.value <= 0) {
+                alert("The count must be between 1 and 100.");
+            } else {
+            // Making the text empty (glich solve)
+            resultBox.innerHTML = "";
+            // Looping the text to make the repeat
+            for (let i = 0; i < parseInt(count.value); i++) {
+                resultBox.innerHTML += `${text.value} `;
+            }
         }
     }
 };
