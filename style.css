@@ -12,7 +12,7 @@ body {
 
 .parent {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .parent div {
