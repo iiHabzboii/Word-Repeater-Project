@@ -13,6 +13,7 @@ body {
 .parent {
     display: flex;
     flex-wrap: wrap;
+    width: 80%; 
 }
 
 .parent div {
